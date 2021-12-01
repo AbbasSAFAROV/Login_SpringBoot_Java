@@ -2,17 +2,28 @@
 
 https://start.spring.io/
 
-Technologies
+### Technologies
+
 -Maven
--Language:J ava
+
+-Language: Java
+
 -Spring Boot: 2.6.1
+
 -Java: 11
 
-Dependencies
+### Dependencies
+
 Spring Web(Web)
+
 Spring Data JPA(SQL)
+
 Thymeleaf(Template Engines)
+
 MySQL Driver(SQL)
+
 Spring Security(Security)
+
 Spring Boot DevTools(Developer Tools)
+
 
