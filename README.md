@@ -32,9 +32,7 @@ Spring Boot DevTools(Developer Tools)
 
 ### How can I connect to the database?
 
-Which Database you will use, you must enter the information about it.
-
-application.properties
+Which Database you will use, you must enter the information about it.  ---> application.properties
 
 after my codes :
 
