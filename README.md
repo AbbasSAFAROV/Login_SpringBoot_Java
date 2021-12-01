@@ -48,17 +48,17 @@ Hibernate: create table users_roles (user_id bigint not null, role_id bigint not
 ![image](https://user-images.githubusercontent.com/61595808/144309982-0ef489b3-64d3-4e87-b398-0e6868dbe5b1.png)
 
 
-### Role
+### -role-
 
 ![image](https://user-images.githubusercontent.com/61595808/144310198-4f50793b-b4f6-4fbf-9010-c7c4f5f67abe.png)
 
 
-### User
+### -user-
 
 ![image](https://user-images.githubusercontent.com/61595808/144310308-f5df235a-1e08-4802-8b4b-fe94287f9f3b.png)
 
 
-### users_roles
+### -users_roles-
 
 ![image](https://user-images.githubusercontent.com/61595808/144310415-d08032f5-6642-417e-9c20-377cc3cc51c5.png)
 
