@@ -5,6 +5,7 @@ https://start.spring.io/
 ### Technologies
 
 -Maven
+
 -Language: Java
 
 -Spring Boot: 2.6.1
