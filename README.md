@@ -66,6 +66,10 @@ My Datbase name is "try".I have 3 table.role,user,users_roles
 
 
 
+DTO:Data Transfer Object
+
+
+
 
 
 
