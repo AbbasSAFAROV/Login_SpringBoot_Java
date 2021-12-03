@@ -77,7 +77,13 @@ Using generated security password: 5d22314e-24aa-442f-8c44-b1cacf8bbaa7
 ![image](https://user-images.githubusercontent.com/61595808/144587600-92c83dfd-1c84-4942-83cc-ea14a9d2e30d.png)
 
 
+### Error
+
+I got this error.
 
 ![image](https://user-images.githubusercontent.com/61595808/144604005-8c69cfcd-b733-45bd-80a4-9c8c65e7da3d.png)
 
+ @Autowired
+    private BCryptPasswordEncoder passwordEncoder;
 
+when I removed the "@Autowired" in this part it worked.
