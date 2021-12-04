@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<style>
+    .text{
+    text-align: center;
+
+    }
+
+
+     .btn-1{
+    background-color: #a6dced;
+    margin-top: 15px;
+    margin-left: 190px;
+    margin-bottom: 15px;
+    box-shadow: 8px;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    }
+    .btn-1:hover{
+    background-color: rgb(238, 231, 231);
+    margin-top: 15px;
+    margin-left: 190px;
+    margin-bottom: 15px;
+    box-shadow: 8px;
+    width: 150px;
+    border-radius: 25px;
+    }
+
+ .input{
+      margin-bottom:20px;
+    height:50px;
+
+
+    border-radius:18px;
+    margin-left: 1%;
+    margin-top: 2%;
+
+
+   width:500px;
+
+}
+</style>
+<body>
+
+     <!-- create navigation bar (header) -->
+
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="container">
+             <div class="navbar-header">
+                 <button type="button" class="navbar-toggle collapsed"
+                         data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                         aria-controls="navbar">
+                     <span class="sr-only">Toggle navigation</span> <span
+                         class="icon-bar"></span> <span class="icon-bar"></span> <span
+                         class="icon-bar"></span>
+                 </button>
+
+                     <a class="navbar-brand" href="#" th:href="@{/}">Registration and
+                         Login Module</a>
+
+             </div>
+         </div>
+     </nav>
+
+     <!-- create HTML registration form -->
+
+     <div class="container">
+         <div class="row">
+             <div class="col-md-6 col-md-offset-3">
+
+                 <!-- success message -->
+                 <div th:if="${param.success}">
+                     <div class="alert alert-info">You've successfully registered
+                         to our awesome app!</div>
+                 </div>
+
+                 <div class="text"><h1>Registration</h1></div>
+
+                 <form th:action="@{/registration}" method="post" th:object="${user}">
+                     <div class="form-group">
+                         <label class="control-label" for="firstName"> First Name </label>
+                         <!-- Buradaki firstname i Dto dan alıyor-->
+                         <input id="firstName" class="form-control  input" th:field="*{firstName}"
+                                required autofocus="autofocus" />
+                     </div>
+
+                     <div class="form-group">
+                         <label class="control-label" for="lastName"> Last Name </label> <input
+                             id="lastName" class="form-control input" th:field="*{lastName}"
+                             required autofocus="autofocus" />
+                     </div>
+
+                     <div class="form-group">
+                         <label class="control-label" for="email"> Email </label> <input
+                             id="email" class="form-control input" th:field="*{email}" required
+                             autofocus="autofocus" />
+                     </div>
+
+                     <div class="form-group">
+                         <label class="control-label" for="password"> Password </label> <input
+                             id="password" class="form-control input" type="password"
+                             th:field="*{password}" required autofocus="autofocus" />
+                     </div>
+
+                     <div class="text">
+                     <div class="form-group">
+
+                         <button type="submit" class="btn-1"><strong>Register</strong></button>
+
+                         <span>Already registered? <a href="/" th:href="@{/login}">
+                             <br>
+                             <img src="https://img.icons8.com/external-bearicons-blue-bearicons/50/000000/external-login-call-to-action-bearicons-blue-bearicons-1.png"/>
+                             Login here</a></span>
+                     </div>
+                     </div>
+                 </form>
+             </div>
+         </div>
+     </div>
+
+</body>
+</html>
