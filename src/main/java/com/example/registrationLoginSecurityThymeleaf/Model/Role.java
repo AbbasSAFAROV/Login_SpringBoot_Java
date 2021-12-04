@@ -1,5 +1,4 @@
 package com.example.registrationLoginSecurityThymeleaf.Model;
-
 import javax.persistence.*;
 
 @Entity
