@@ -16,7 +16,6 @@
 
     }
 
-
      .btn-1{
     background-color: #a6dced;
     margin-top: 15px;
@@ -54,7 +53,7 @@
 </style>
 <body>
 
-<!-- create navigation bar (header) -->
+<!-- Navigation bar -->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
@@ -86,13 +85,13 @@
 
             <form th:action="@{/login}" method="post">
 
-                <!-- error message -->
+                <!-- Error Message -->
                 <div th:if="${param.error}">
                     <div class="alert alert-danger">Invalid username or
                         password.</div>
                 </div>
 
-                <!-- logout message -->
+                <!-- Logout Message -->
                 <div th:if="${param.logout}">
                     <div class="alert alert-info">You have been logged out.</div>
                 </div>
