@@ -88,3 +88,8 @@ I got this error.
     private BCryptPasswordEncoder passwordEncoder;
 
 when I removed the "@Autowired" in this part it worked.
+
+But the code did not save it to the database. And it still didn't work properly. When I added "@Lazy" it worked completely.
+
+![image](https://user-images.githubusercontent.com/61595808/144708337-ed691c16-3163-4a6f-a8a9-c3df3067daed.png)
+
