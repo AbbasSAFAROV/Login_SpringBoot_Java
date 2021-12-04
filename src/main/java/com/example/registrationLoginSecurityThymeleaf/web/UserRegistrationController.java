@@ -22,15 +22,13 @@ public class UserRegistrationController {
         this.userService = userService;
     }
 
-    @ModelAttribute("user") //thy den buna bağlanılıyor
+    @ModelAttribute("user") 
     public UserRegistrationDto userRegistrationDto(){
         return new UserRegistrationDto();
     }
 
     @GetMapping
     public  String showRegistrationForm(){
-      //  model.addAttribute("user",new UserRegistrationDto());
-
         return  "registration";
     }
 
