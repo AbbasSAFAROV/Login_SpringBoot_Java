@@ -1,5 +1,4 @@
 package com.example.registrationLoginSecurityThymeleaf.Model;
-
 import javax.persistence.*;
 import java.util.Collection;
 
@@ -32,16 +31,6 @@ public class User {
                     name = "role_id", referencedColumnName = "id"))
 
     private Collection<Role> roles;
-    /*
-  @ManyToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
-    @JoinTable(
-            name = "users_roles",
-            joinColumns = @JoinColumn(
-                    name = "user_id",referencedColumnName = "id"),
-            inverseJoinColumns = @JoinColumn(
-                    name = "role_id",referencedColumnName = "id"))
-
-    private Collection<Role> roles; */
 
     public User() {
 
