@@ -19,13 +19,11 @@ import java.util.stream.Collectors;
 
 
 @Service
-
 public class UserServiceImpl implements UserService{
 
 
     private UserRepository userRepository;
 
-   // @Autowired orjinalinde bu var ama u olunca çalışmmadı
     @Autowired
     private BCryptPasswordEncoder  passwordEncoder;
 
