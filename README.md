@@ -87,9 +87,12 @@ I got this error.
 
  
  
- @Autowired
+ 
+     @Autowired
  
     private BCryptPasswordEncoder passwordEncoder;
+    
+    
 
 
 
