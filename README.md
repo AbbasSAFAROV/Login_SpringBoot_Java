@@ -86,10 +86,9 @@ I got this error.
 ![image](https://user-images.githubusercontent.com/61595808/144604005-8c69cfcd-b733-45bd-80a4-9c8c65e7da3d.png)
 
  
- """Java
      @Autowired
  
-    private BCryptPasswordEncoder passwordEncoder; """
+    private BCryptPasswordEncoder passwordEncoder;
 
 
 when I removed the "@Autowired" in this part it worked.
