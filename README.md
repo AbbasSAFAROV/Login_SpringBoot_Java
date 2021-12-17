@@ -87,13 +87,9 @@ I got this error.
 
  
  '''Java
- 
      @Autowired
  
-    private BCryptPasswordEncoder passwordEncoder;
-    
-    
-'''
+    private BCryptPasswordEncoder passwordEncoder; '''
 
 
 when I removed the "@Autowired" in this part it worked.
