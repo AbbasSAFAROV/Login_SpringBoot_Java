@@ -7,64 +7,55 @@
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
           crossorigin="anonymous">
-
 </head>
 <style>
 .text{
-    text-align: center;
-
-    }
-
- .input{
-    margin-bottom:8px;
-    height:50px;
-    width:300px;
-    border-radius:18px;
-    margin-left: 42%;
-    margin-top: 2%;
-
-
-    }
-    .btn-1{
-    background-color:#add8e6;
-    box-shadow: 8px;
-    width: 150px;
-    height: 50px;
-    border-radius: 25px;
-    margin: 0;
-    position: absolute;
-
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    }
-     .btn-1:hover{
-    background-color: #0499C7;
-    box-shadow: 8px;
-    width: 150px;
-    height: 50px;
-    border-radius: 25px;
-    margin: 0;
-    position: absolute;
-
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    }
-
-    .img{
-    height: 50px;
-    width: 50px;
-    }
-    .h{
-    font-size:20px;
-    }
-    .col{
-    margin-top:30px;
-    }
-
-    .b{
-    color: purple;
-    }
-    </style>
+   text-align: center;
+}
+.input{
+   margin-bottom:8px;
+   height:50px;
+   width:300px;
+   border-radius:18px;
+   margin-left: 42%;
+   margin-top: 2%;
+}
+.btn-1{
+   background-color:#add8e6;
+   box-shadow: 8px;
+   width: 150px;
+   height: 50px;
+   border-radius: 25px;
+   margin: 0;
+   position: absolute;
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+}
+.btn-1:hover{
+   background-color: #0499C7;
+   box-shadow: 8px;
+   width: 150px;
+   height: 50px;
+   border-radius: 25px;
+   margin: 0;
+   position: absolute;
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+}
+.img{
+   height: 50px;
+   width: 50px;
+}
+.h{
+   font-size:20px;
+}
+.col{
+   margin-top:30px;
+}
+.b{
+   color: purple;
+}
+</style>
 <body>
 <!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -87,42 +78,23 @@
         </div>
     </div>
 </nav>
-
 <div class="text">
     <img src="https://img.icons8.com/bubbles/100/000000/group.png" height="100"/>
     <h3>Welcome to the personal page. <span th:next="${userLogin}"></span> </h3>
     <div class="container">
     <h3 class="b" > <span sec:authentication="principal.username"> User</span></h3>
-
-
-
-
-
-        <h4 class="h">Please Write Weight <input type="hidden" />
-            <input type="text"  class="form-control input" placeholder="Please write your weight"  style="font-size:20px"/></h4>
-
-
-
-
-        <h4 class="h"><label for="publishDate">Please Select Date</label> <input type="date"
+    <h4 class="h">Please Write Weight <input type="hidden" />
+    <input type="text"  class="form-control input" placeholder="Please write your weight"  style="font-size:20px"/></h4>
+    <h4 class="h"><label for="publishDate">Please Select Date</label> <input type="date"
                                                                                  class="form-control input"
-
                                                                                  id="publishDate"
                                                                                  placeholder="Publish Date" />
 
-        </h4>
-
-
-
-
-        <br>
-        <br>
-        <button type="submit"   class="btn-1"><center><strong>SAVE</strong></center></button>
-
-
+     </h4>
+     <br>
+      <br>
+      <button type="submit"   class="btn-1"><center><strong>SAVE</strong></center></button>
     </div>
 </div>
-
-
 </body>
 </html>
