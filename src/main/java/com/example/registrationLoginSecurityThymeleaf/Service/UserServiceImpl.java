@@ -21,12 +21,10 @@ import java.util.stream.Collectors;
 @Service
 public class UserServiceImpl implements UserService{
 
-
     private UserRepository userRepository;
 
     @Autowired
     private BCryptPasswordEncoder  passwordEncoder;
-
 
     public UserServiceImpl(UserRepository userRepository) {
         super();
