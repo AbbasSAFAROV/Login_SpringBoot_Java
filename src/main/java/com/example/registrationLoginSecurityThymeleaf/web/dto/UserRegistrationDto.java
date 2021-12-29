@@ -3,9 +3,8 @@ package com.example.registrationLoginSecurityThymeleaf.web.dto;
 public class UserRegistrationDto {
     private  String firstName;
     private  String lastName;
-    private String  email;
+    private  String  email;
     private  String password;
-
 
     public UserRegistrationDto() {
 
