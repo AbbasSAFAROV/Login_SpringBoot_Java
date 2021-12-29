@@ -6,8 +6,6 @@ import java.util.Collection;
 @Entity
 @Table(name="user",uniqueConstraints = @UniqueConstraint(columnNames = "email" ))
 public class User {
-
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -21,7 +19,6 @@ public class User {
     private String email;
 
     private String password;
-
 
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(
