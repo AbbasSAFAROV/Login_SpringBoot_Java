@@ -7,20 +7,15 @@
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
           crossorigin="anonymous">
-
 </head>
-
 <style>
     .text{
     text-align: center;
-
     }
-	
-     .btn-1{
+    .btn-1{
     background-color: #a6dced;
     margin-top: 15px;
     margin-left: 40px;
-
     margin-bottom: 15px;
     box-shadow: 8px;
     width: 150px;
@@ -36,20 +31,17 @@
     width: 150px;
     border-radius: 25px;
     }
-
- .input{
+    .input{
     margin-bottom:20px;
     height:50px;
     border-radius:18px;
     margin-left: 1%;
     margin-top: 2%;
     width:500px;
-}
+   }
 </style>
 <body>
-
 <!-- Navigation bar -->
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <div class="navbar-header">
@@ -65,45 +57,34 @@
         </div>
     </div>
 </nav>
-
 <br>
 <br>
-
 <div class = "container">
     <div class = "row">
         <div class = "col-md-6 col-md-offset-3">
-
             <div class="text">
                 <h1> User Login Page </h1>
-
             </div>
-
             <form th:action="@{/login}" method="post">
-
                 <!-- Error Message -->
                 <div th:if="${param.error}">
                     <div class="alert alert-danger">Invalid username or
                         password.</div>
                 </div>
-
                 <!-- Logout Message -->
                 <div th:if="${param.logout}">
                     <div class="alert alert-info">You have been logged out.</div>
                 </div>
-
                 <div class = "form-group">
                     <label for ="username"> Username </label> :
                     <input type="text" class = "form-control input" id ="username" name = "username"
                            placeholder="Enter Email " autofocus="autofocus">
                 </div>
-
                 <div class="form-group">
                     <label for="password">Password</label>: <input type="password"
                                                                    id="password" name="password" class="form-control input"
                                                                    placeholder="Enter Password" />
                 </div>
-
-
                 <div class="b">
                    <div class="form-group">
                        <div class="row">
@@ -114,7 +95,6 @@
                        </div>
                    </div>
               </div>
-
             </form>
             <div class="text">
             <div class="form-group">
@@ -127,6 +107,5 @@
         </div>
     </div>
 </div>
-
 </body>
 </html>
